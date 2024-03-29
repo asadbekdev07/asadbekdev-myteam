@@ -294,7 +294,9 @@ select:-webkit-autofill:focus {
   padding-top: 135px;
   padding-bottom: 140px;
   background-color: var(--sacramento-green);
-  overflow: hidden;
+  background-image: url("../img/features-bottom-icon.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 720px) bottom;
 }
 
 .features__container {
@@ -312,14 +314,6 @@ select:-webkit-autofill:focus {
   font-weight: 700;
   font-size: 48px;
   line-height: 48px;
-}
-
-.features__img {
-  position: absolute;
-  bottom: -147px;
-  right: -244px;
-  width: 200px;
-  height: 244px;
 }
 
 .features__title::before {
