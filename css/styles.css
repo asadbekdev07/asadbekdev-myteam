@@ -79,7 +79,7 @@ body {
   margin: 0;
   font-family: "Livvic", "Arial", sans-serif;
   font-weight: 600;
-  font-size: 15x;
+  font-size: 15px;
   line-height: 25px;
   background-color: var(--midnight-green);
   color: var(--primary-text-color);
@@ -133,8 +133,6 @@ select:-webkit-autofill:focus {
 .container {
   width: 100%;
   max-width: 1110px;
-  padding-left: 20px;
-  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -169,6 +167,20 @@ select:-webkit-autofill:focus {
   opacity: 0.6;
 }
 
+/* LOGO  */
+.logo {
+  display: block;
+}
+.logo__img {
+  display: block;
+  width: 160px;
+  height: 40px;
+}
+
+.logo__img:hover {
+  opacity: 0.8;
+}
+
 /* MAIN-CONTENT  */
 .main-content {
   flex-grow: 1;
@@ -186,18 +198,6 @@ select:-webkit-autofill:focus {
 
 .site-header__logo {
   margin-right: 80px;
-}
-.logo {
-  display: block;
-}
-.logo__img {
-  display: block;
-  width: 160px;
-  height: 40px;
-}
-
-.logo__img:hover {
-  opacity: 0.8;
 }
 
 .logo__img:active {
@@ -235,6 +235,56 @@ select:-webkit-autofill:focus {
   opacity: 0.6;
 }
 
+/* HERO  */
+.hero {
+  padding-top: 60px;
+  padding-bottom: 250px;
+  background-image: url("../img/hero-left-bg.png"), url("../img/hero-bg.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% - 720px) 57px, calc(50% + 376px) 405px;
+}
+
+.hero-content {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.hero-content__title {
+  margin: 0;
+  margin-right: 30px;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 100px;
+}
+.hero-content__purple {
+  color: var(--light-pink);
+}
+
+.hero-content__divider-text-wrapper {
+  position: relative;
+}
+
+.hero-content__divider {
+  position: absolute;
+  top: -92px;
+  left: 4px;
+  width: 50px;
+  height: 4px;
+  margin-top: 0;
+  margin-bottom: 80px;
+  border: 0;
+  background-color: var(--rapture-blue);
+}
+
+.hero-content__text {
+  width: 100%;
+  max-width: 450px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 28px;
+}
 
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
