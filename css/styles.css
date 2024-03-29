@@ -294,6 +294,7 @@ select:-webkit-autofill:focus {
   padding-top: 135px;
   padding-bottom: 140px;
   background-color: var(--sacramento-green);
+  overflow: hidden;
 }
 
 .features__container {
