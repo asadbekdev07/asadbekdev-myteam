@@ -188,7 +188,7 @@ select:-webkit-autofill:focus {
 
 /* SITE-HEADER  */
 .site-header {
-  padding-top: 70px;
+  padding-top: 67px;
   padding-bottom: 70px;
 }
 .site-header__container {
@@ -216,7 +216,7 @@ select:-webkit-autofill:focus {
 }
 
 .sitenav__item:not(:last-child) {
-  margin-right: 40px;
+  margin-right: 50px;
 }
 
 .sitenav__link {
