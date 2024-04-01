@@ -466,23 +466,21 @@ select:-webkit-autofill:focus {
 }
 
 /* SITE-FOOTER  */
-.site-footer__top {
+.ready {
   padding-top: 86px;
   padding-bottom: 71px;
-  display: flex;
   background-color: var(--light-pink);
   background-image: url("../img/site-footer-bg.svg");
   background-repeat: no-repeat;
   background-position: calc(50% - 622px) 66px;
 }
 
-.wrapper {
-  margin-left: auto;
-  margin-right: auto;
+.ready__container {
   display: flex;
+  justify-content: center;
 }
 
-.site-footer__top-title {
+.ready__title {
   margin: 0;
   margin-right: 260px;
   font-weight: 700;
