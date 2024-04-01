@@ -573,11 +573,12 @@ select:-webkit-autofill:focus {
   margin-right: 16px;
 }
 .site-footer__socials-link {
-  display: flex;
+  display: block;
+  color: var(--primary-text-color);
 }
 
 .site-footer__socials-link:hover {
-  background-color: var(--light-pink);
+  color: var(--light-pink);
 }
 
 .site-footer__text {
