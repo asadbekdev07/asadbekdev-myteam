@@ -592,6 +592,44 @@ select:-webkit-autofill:focus {
   opacity: 0.6;
 }
 
+/* ABOUT  */
+.about {
+  padding-top: 50px;
+  padding-bottom: 120px;
+  background-image: url("../img/about-bg.svg");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 720px) 126px;
+}
+.about__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about__title {
+  margin: 0;
+  font-size: 64px;
+  line-height: 1.56;
+}
+.about__description {
+  width: 100%;
+  max-width: 730px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.55;
+}
+
+.about__description::before {
+  display: block;
+  margin-bottom: 40px;
+  width: 50px;
+  height: 4px;
+  border: 0;
+  background-color: var(--light-pink);
+  content: "";
+}
+
+
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
