@@ -169,6 +169,21 @@ select:-webkit-autofill:focus {
   opacity: 0.6;
 }
 
+.button--footer {
+  background-color: transparent;
+  color: var(--sacramento-green);
+  border-color: var(--sacramento-green);
+}
+
+.button--footer:hover {
+  background-color: var(--sacramento-green);
+  color: var(--primary-text-color);
+}
+
+.button--footer:active {
+  opacity: 0.6;
+}
+
 /* LOGO  */
 .logo {
   display: block;
@@ -448,6 +463,32 @@ select:-webkit-autofill:focus {
 .story__quote-author-img {
   border-radius: 50%;
   border: 2px solid #c4fffe;
+}
+
+/* SITE-FOOTER  */
+.site-footer__top {
+  padding-top: 86px;
+  padding-bottom: 71px;
+  display: flex;
+  background-color: var(--light-pink);
+  background-image: url("../img/site-footer-bg.svg");
+  background-repeat: no-repeat;
+  background-position: calc(50% - 622px) 66px;
+}
+
+.wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.site-footer__top-title {
+  margin: 0;
+  margin-right: 260px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1;
+  color: var(--sacramento-green);
 }
 
 
