@@ -633,11 +633,14 @@ select:-webkit-autofill:focus {
 /* DIRECTORS  */
 .directors {
   background-color: var(--deep-green);
+  background-image: url("../img/director-left-bg.svg"), url("../img/reviews-bg-left.svg");
+  background-repeat: no-repeat;
+  background-position: calc(50% - 719px) 0px, calc(50% + 648px) bottom;
 }
 
 .directors__container {
   padding-top: 140px;
-  padding-bottom: 140px;
+  padding-bottom: 171px;
 }
 
 .directors__title {
@@ -765,6 +768,10 @@ select:-webkit-autofill:focus {
   background-position: center center;
   background-repeat: no-repeat;
   cursor: pointer;
+}
+
+.director__button:active {
+  background-color: var(--rapture-blue);
 }
 
 .director__info--open .director__button {
