@@ -630,6 +630,149 @@ select:-webkit-autofill:focus {
 }
 
 
+/* DIRECTORS  */
+.directors {
+  background-color: var(--deep-green);
+}
+
+.directors__container {
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+
+.directors__title {
+  margin: 0;
+  margin-bottom: 64px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+}
+.directors__list {
+  padding: 0;
+  margin: 0;
+  margin-right: -30px;
+  margin-bottom: -76px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+}
+.directors__item {
+  width: 100%;
+  max-width: 350px;
+  flex-shrink: 0;
+  align-items: center;
+}
+
+
+
+.director {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 32px 24px 56px 24px;
+  margin-right: 30px;
+  margin-bottom: 76px;
+  background-color: var(--sacramento-green);
+}
+
+.director__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.director__img {
+  margin-top: 0;
+  margin-bottom: 16px;
+  border-radius: 50px;
+  border: 2px solid var(--primary-text-color);
+}
+.director__name {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.55;
+  color: var(--rapture-blue);
+  text-align: center;
+}
+.director__job {
+  margin: 0;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 15px;
+  line-height: 1.6;
+  text-align: center;
+}
+.director__info {
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.director__info--open .director__info {
+  display: block;
+}
+
+.director__info--open .director__inner {
+  display: none;
+}
+
+.director__about {
+  width: 100%;
+  max-width: 254px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+.director__messanger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+  .director__socials {
+    display: inline-block;
+    vertical-align: baseline;
+    text-decoration: none;
+    color: var(--primary-text-color);
+  }
+
+  .director__socials:not(:last-child) {
+    margin-right: 16px;
+  }
+
+  .director__socials:hover {
+    color: var(--light-pink);
+  }
+
+.director__button {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  bottom: -29px;
+  transform: translateX(-50%);
+  width: 56px;
+  height: 56px;
+  border: none;
+  padding: 0;
+  border-radius: 50%;
+  outline: none;
+  background-color: var(--light-pink);
+  background-image: url("../img/plus.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.director__info--open .director__button {
+  transform:  translateX(-50%) rotate(-45deg);
+  background-color: var(--rapture-blue);
+}
+
+
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
