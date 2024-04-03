@@ -30,7 +30,39 @@
   </header>
 
   <main class="main-content">
+    <section class="contact">
+      <div class="container contact__container">
+        <div class="contact__left">
+          <h1 class="contact__title">
+            Contact
+          </h1>
+          <h2 class="contact__heading">
+            Ask us about
+          </h2>
+          <ul class="contact__list">
+            <li class="contact__item contact__item--man">
+                The quality of our talent network
+            </li>
+            <li class="contact__item contact__item--customization">
+                Usage & implementation of our software
+            </li>
+            <li class="contact__item contact__item--growth">
+                How we help drive innovation
+            </li>
+          </ul>
+        </div>
 
+        <form class="contact__form" action="#">
+          <input class="contact__input" type="name" name="name-input" placeholder="Name" aria-label="your name" required>
+          <input class="contact__email" type="email" name="email-input" placeholder="Email Address" aria-label="your email" pattern="^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$" required>
+          <span class="contact__invalid">This field is required</span>
+          <input class="contact__input" type="name" name="name-input" placeholder="Company Name" aria-label="Company Name" required>
+          <input class="contact__input" type="text" name="text-input" placeholder="Title" aria-label="title" required>
+          <textarea class="contact__textarea" name="message" id="message" placeholder="Message" minlength="3" required></textarea>
+          <button class="contact__button" type="submit">submit</button>
+        </form>
+      </div>
+    </section>
 
   </main>
 

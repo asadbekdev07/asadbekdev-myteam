@@ -348,30 +348,30 @@ select:-webkit-autofill:focus {
   list-style: none;
   max-width: 540px;
 }
-.features__list-item {
+.feature__item {
   display: flex;
   align-items: center;
   width: 100%;
 }
 
-.features__list-item:not(:last-child) {
+.feature__item:not(:last-child) {
   margin-bottom: 32px;
 }
 
-.features__list-item-icon {
+.feature__item-icon {
   display: block;
   margin-right: 23px;
 }
 
 
-.features__heading {
+.feature__heading {
   margin: 0;
   margin-bottom: 16px;
   font-size: 18px;
   line-height: 28px;
   color: var(--light-pink);
 }
-.features__text {
+.feature__text {
   margin: 0;
   opacity: 0.8;
 }
@@ -810,7 +810,187 @@ select:-webkit-autofill:focus {
   display: flex;
 }
 
+/* CONTACT  */
 
+.contact {
+  background-image: url("../img/director-left-bg.svg"),
+  url("../img/contact-bg.svg");
+  background-position: calc(50% - 680px) 130px, calc(50% + 680px) bottom;
+  background-repeat: no-repeat;
+}
+
+.contact__container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.contact__title {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 100px;
+  color: #ffffff;
+}
+
+.contact__heading {
+  margin-top: 0;
+  margin-bottom: 32px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 48px;
+  color: var(--light-pink);
+}
+
+.contact__item {
+  display: flex;
+  align-items: center;
+  max-width: 540px;
+  margin-bottom: 8px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  color: #ffffff;
+  }
+
+.contact__item--man::before {
+  content: "";
+  display: block;
+  flex-shrink: 0;
+  width: 72px;
+  height: 72px;
+  margin-right: 23px;
+  background-image: url("../img/icon-feature-experienced.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.contact__item--customization::before {
+  content: "";
+  display: block;
+  flex-shrink: 0;
+  width: 72px;
+  height: 72px;
+  margin-right: 23px;
+  background-image: url("../img/icon-feature-implementation.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.contact__item--growth::before {
+  content: "";
+  display: block;
+  flex-shrink: 0;
+  width: 72px;
+  height: 72px;
+  margin-right: 23px;
+  background-image: url("../img/icon-feature-productivity.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.contact__item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.contact__form {
+  width: 542px;
+  margin-left: 30px;
+}
+
+.contact__input {
+  display: block;
+  width: 100%;
+  margin-bottom: 24px;
+  padding-left: 14px;
+  padding-bottom: 17px;
+  border: none;
+  outline: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  background-color: transparent;
+  border-bottom: 1px solid #ffffff;
+  color: #ffffff;
+}
+.contact__email {
+  display: block;
+  width: 100%;
+  padding-left: 14px;
+  padding-bottom: 17px;
+  margin-bottom: 24px;
+  border: none;
+  outline: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  background-color: transparent;
+  border-bottom: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+.contact__invalid {
+  margin-top: -15px;
+  display: none;
+  color: var(--light-pink);
+}
+
+.contact__email:not(:placeholder-shown):invalid {
+  border-bottom: 1px solid tomato;
+}
+
+.contact__email:not(:placeholder-shown):invalid ~ .contact__invalid {
+  display: block;
+}
+
+.contact__email:not(:placeholder-shown):valid {
+  border-bottom: 1px solid greenyellow;
+}
+
+.contact__textarea {
+  display: block;
+  width: 100%;
+  padding-left: 14px;
+  padding-bottom: 17px;
+  margin-bottom: 24px;
+  border: none;
+  outline: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  background-color: transparent;
+  border-bottom: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+.contact__button {
+  display: inline-block;
+  vertical-align: baseline;
+  border: none;
+  outline: none;
+  padding: 10px 32px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--deep-green);;
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+.contact__button:hover {
+  opacity: 0.8;
+}
+
+.contact__button:active {
+  opacity: 0.6;
+}
 
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
