@@ -967,6 +967,7 @@ select:-webkit-autofill:focus {
   background-color: transparent;
   border-bottom: 1px solid #ffffff;
   color: #ffffff;
+  resize: none;
 }
 
 .contact__button {
